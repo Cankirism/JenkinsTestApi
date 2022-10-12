@@ -21,6 +21,12 @@ namespace JenkinsTestApi.Controllers
 
             return Ok(surname + name);
         }
+
+        [HttpPost("Send")]
+        public IActionResult Send(string name)
+        {
+            return Ok("Send calisti + name");
+        }
          
     
     }
