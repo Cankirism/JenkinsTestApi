@@ -13,5 +13,17 @@ namespace JenkinsTestApi.Controllers
         {
             return "hello";
         }
+
+        [HttpPost]
+        public IActionResult Save(string name, string surname)
+        {
+
+
+            return Ok(surname + name);
+        }
+         
+    
     }
+
+
 }
