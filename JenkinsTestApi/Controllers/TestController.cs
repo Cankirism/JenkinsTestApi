@@ -22,11 +22,12 @@ namespace JenkinsTestApi.Controllers
             return Ok(surname + name);
         }
 
-        [HttpPost("Send")]
+        [HttpPost("SendName")]
         public IActionResult Send(string name)
         {
             return Ok("Send calisti + name");
         }
+        
          
     
     }
